@@ -655,7 +655,7 @@ b = subplot(5,1,2);
     ylabel('laser power');
     title('laser');
 c = subplot(5,1,3);
-	filtered_mean_spectrogram); %plot the log spectrum
+    imagesc(time_spectrogram_zero, F, filtered_mean_spectrogram); %plot the log spectrum
     set(gca,'YDir', 'normal');
     ylim([0, 30]);
     caxis([-6.7, -4])
